@@ -29,6 +29,7 @@ public class FizzBuzz {
 
     public void imprimir(){
         for(int i = 1; i < 101; i++){
+            //Se puede simplificar el codigo
             boolean multiplo3 = false;
             boolean multiplo5 = false;
 
@@ -38,7 +39,8 @@ public class FizzBuzz {
             if(i % 5 == 0) {
                 multiplo5 = true;
             }
-
+            //Metiendo aquí directamente las condiciones en vez de crear
+            //variables booleanas
             if(multiplo3 && multiplo5){
                 System.out.println("FizzBuzz");
             } else if (multiplo3) {
@@ -48,8 +50,6 @@ public class FizzBuzz {
             } else {
                 System.out.println(i);
             }
-
         }
     }
-
 }
